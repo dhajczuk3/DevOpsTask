@@ -5,7 +5,7 @@ class Dec2Hex {
 
     public static void main(String[] args) {
         if (args.length < 1) {
-            logger.severe("Error: No input provided.");
+            logger.severe("Error:No input provided.");
             return;
         }
         try {
