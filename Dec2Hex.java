@@ -10,7 +10,10 @@ class Dec2Hex {
         }
         try {
             int decimalNumber = Integer.parseInt(args[0]);
-
+        if (decimalNumber < 0) {
+            logger.severe("Error: The input value is negative. Please provide a non-negative integer.");
+            return;
+        }
             char[] hexDigits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
             StringBuilder hexadecimal = new StringBuilder();
             logger.info("Converting the Decimal Value " + decimalNumber + " to Hex...");
